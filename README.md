@@ -26,7 +26,7 @@ The wireframes reflect our Ideology and the responsiveness of the CSS, so when w
 
 ---
 
- - [Roboto](https://fonts.google.com/specimen/Roboto?query=robo - styles)
+ - [Roboto](https://fonts.google.com/specimen/Roboto?query=robo)
  - [Lato](https://fonts.google.com/specimen/Lato?query=LATO)
  - [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=roboto+sl)
  - [Lora](https://fonts.google.com/specimen/Lora?query=lora)
