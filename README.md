@@ -1,8 +1,4 @@
-# CSS Zen Garden
-
-# EXQUISITE GARDENS
-
----
+# CSS Zen Garden: EXQUISITE GARDENS
 
 ## Theme
 
