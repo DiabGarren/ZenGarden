@@ -12,7 +12,7 @@ The theme of our CSS Zen Garden will be something simple yet beautiful. We plan 
 
 ![Colors](https://i.postimg.cc/nVYxdCZt/Colors.png)
 
-Link to Colors: https://coolors.co/e8f1f2-d1ffd7-b3ffb3-b3efb2-a6d3a0-7a9e7e-31493c-808782-656565-001a23
+Link to Colors: [Color Pallet](https://coolors.co/e8f1f2-d1ffd7-b3ffb3-b3efb2-a6d3a0-7a9e7e-31493c-808782-656565-001a23)
 
 ## Wireframes
 
@@ -21,6 +21,17 @@ Link to Colors: https://coolors.co/e8f1f2-d1ffd7-b3ffb3-b3efb2-a6d3a0-7a9e7e-314
 ![Wireframe](https://i.postimg.cc/tX5mmWnk/Wireframe.png)
 
 The wireframes reflect our Ideology and the responsiveness of the CSS, so when we move from one screen to other screen size, we have come up with the idea to stretch the Image and even make it dynamic as the user scrolls it changes.
+
+## Fonts 
+
+---
+
+ - [Roboto](https://fonts.google.com/specimen/Roboto?query=robo - styles)
+ - [Lato](https://fonts.google.com/specimen/Lato?query=LATO)
+ - [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=roboto+sl)
+ - [Lora](https://fonts.google.com/specimen/Lora?query=lora)
+
+These Fonts will be used accordingly.
 
 ## Authors:
 
