@@ -1,0 +1,76 @@
+//Initial branch commit
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+
+$font-lato: 'Lato',sans-serif;
+$font-lora: 'Lora',serif;
+$font-roboto: 'Roboto',sans-serif;
+$font-slab: 'Roboto Slab',serif;
+
+// Color Scheme
+$alice-blue: rgba(232, 241, 242, 1);
+$aero-blue: rgba(209, 255, 215, 1);
+$mint-green: rgba(179, 255, 179, 1);
+$granny-smith-apple: rgba(179, 239, 178, 1);
+$celadon: rgba(166, 211, 160, 1);
+$russian-green: rgba(122, 158, 126, 1);
+$kombu-green: rgba(49, 73, 60, 1);
+$battleship-grey: rgba(128, 135, 130, 1);
+$granite-gray: rgba(101, 101, 101, 1);
+$rich-black: rgba(0, 26, 35, 1);
+
+h1 {
+    font-family: $font-lato;
+}
+h2{
+    font-family: $font-lora;
+}
+h3{
+    font-family: $font-roboto;
+    font-weight: bold;
+}
+p{
+    font-family: $font-slab;
+}
+
+
+
+h1,h2,h3,div.summary,div#zen-benefits,footer{
+    text-align: center;
+}
+
+div#zen-supporting,div#zen-requirements{
+display :grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto auto;
+column-gap: 10%;
+margin:5%;
+}
+
+div#zen-benefits{
+grid-column: span 2;
+}
+h3{grid-column: span 2;}
+div#zen-requirements,footer{
+    grid-column: span 2;
+}
+div#zen-requirements.requirements :nth-child(6){
+    grid-column: span 2;
+}
+
+// div#zen-requirements.requirements > p {
+//     grid-column: span 2;
+// }
+
+body {
+    font-family: $font-lora;  // font family
+    color: $rich-black; // text color
+    background-color: $alice-blue;
+    margin: 5%;
+}
+
+section#zen-intro{
+    margin: 5%;
+    text-align: justify;
+}
