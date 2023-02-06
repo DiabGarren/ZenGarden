@@ -47,32 +47,13 @@ p {
   font-family: "Roboto Slab", serif;
 }
 
-h1, h2, h3, div.summary, div#zen-benefits, footer {
+h1,
+h2,
+h3,
+div.summary,
+div#zen-benefits,
+footer {
   text-align: center;
-}
-
-div#zen-supporting, div#zen-requirements {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  column-gap: 10%;
-  margin: 5%;
-}
-
-div#zen-benefits {
-  grid-column: span 2;
-}
-
-h3 {
-  grid-column: span 2;
-}
-
-div#zen-requirements, footer {
-  grid-column: span 2;
-}
-
-div#zen-requirements.requirements :nth-child(6) {
-  grid-column: span 2;
 }
 
 body {
@@ -83,7 +64,7 @@ body {
 }
 
 section#zen-intro {
-  margin: 5%;
+  margin: 5% 0 0 0;
   text-align: justify;
 }
 
@@ -113,8 +94,29 @@ aside.sidebar {
 @media (min-width: 670px) {
   body:nth-child(n) {
     padding: 1%;
-    border-left: 25vw solid black;
-    border-right: 25vw solid black;
+    border-left: 20vw solid black;
+    border-right: 20vw solid black;
+  }
+  div#zen-supporting,
+  div#zen-requirements {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 10%;
+    margin: 5%;
+  }
+  div#zen-benefits {
+    grid-column: span 2;
+  }
+  h3 {
+    grid-column: span 2;
+  }
+  div#zen-requirements,
+  footer {
+    grid-column: span 2;
+  }
+  div#zen-requirements.requirements :nth-child(6) {
+    grid-column: span 2;
   }
 }
 
