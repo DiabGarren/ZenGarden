@@ -1,24 +1,7 @@
 //Initial branch commit
-
-//Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
-
-$font-lato: 'Lato',sans-serif;
-$font-lora: 'Lora',serif;
-$font-roboto: 'Roboto',sans-serif;
-$font-slab: 'Roboto Slab',serif;
-
-// Color Scheme
-$alice-blue: rgba(232, 241, 242, 1);
-$aero-blue: rgba(209, 255, 215, 1);
-$mint-green: rgba(179, 255, 179, 1);
-$granny-smith-apple: rgba(179, 239, 178, 1);
-$celadon: rgba(166, 211, 160, 1);
-$russian-green: rgba(122, 158, 126, 1);
-$kombu-green: rgba(49, 73, 60, 1);
-$battleship-grey: rgba(128, 135, 130, 1);
-$granite-gray: rgba(101, 101, 101, 1);
-$rich-black: rgba(0, 26, 35, 1);
+@use "fonts" as *;
+@use "colors" as *;
+@use "heading";
 
 h1 {
     font-family: $font-lato;
