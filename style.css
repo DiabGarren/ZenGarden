@@ -79,12 +79,43 @@ body {
   font-family: "Lora", serif;
   color: rgb(0, 26, 35);
   background-color: rgb(232, 241, 242);
-  margin: 5%;
+  margin: auto;
 }
 
 section#zen-intro {
   margin: 5%;
   text-align: justify;
+}
+
+div#zen-supporting.main.supporting {
+  justify-content: center;
+}
+
+div.page-wrapper {
+  max-width: 70vw;
+  margin: auto;
+}
+
+div#zen-requirements {
+  margin: 0%;
+}
+
+nav {
+  margin: -4vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+aside.sidebar {
+  margin: 5%;
+}
+
+@media (min-width: 670px) {
+  body:nth-child(n) {
+    padding: 1%;
+    border-left: 25vw solid black;
+    border-right: 25vw solid black;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,7 @@ grid-column: span 2;
 h3{grid-column: span 2;}
 div#zen-requirements,footer{
     grid-column: span 2;
+    
 }
 div#zen-requirements.requirements :nth-child(6){
     grid-column: span 2;
@@ -50,10 +51,47 @@ body {
     font-family: $font-lora;  // font family
     color: $rich-black; // text color
     background-color: $alice-blue;
-    margin: 5%;
+    margin: auto;
+    // max-width: 50vw;
+    
 }
 
 section#zen-intro{
     margin: 5%;
     text-align: justify;
 }
+
+
+div#zen-supporting.main.supporting{
+    justify-content: center;
+}
+
+div.page-wrapper{
+        max-width: 70vw;
+            margin: auto;}
+
+div#zen-requirements{
+    margin: 0%;
+}
+
+
+nav{
+    margin: -4vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+aside.sidebar{
+    margin:5%
+}
+
+//670px to change the animation
+$breakpoint-tablet: 670px;
+
+@media (min-width: $breakpoint-tablet) {
+body:nth-child(n){
+    padding:1%;
+    // background-color: aqua;
+    border-left: 25vw solid black;
+    border-right: 25vw solid black;
+}}
