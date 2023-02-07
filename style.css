@@ -30,6 +30,28 @@ h2 abbr {
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='100%25' viewBox='0 0 478 205' xml:space='preserve'%3E%3Cpath /%3E%3C/svg%3E");
   }
 }
+#zen-explanation {
+  border-radius: 3px;
+}
+
+#zen-explanation h3, #zen-explanation p {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right, #0f01a4, #017a0f, #0f01a4);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
 h1 {
   font-family: "Lato", sans-serif;
 }
