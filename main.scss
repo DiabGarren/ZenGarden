@@ -29,6 +29,7 @@ div.summary,
 div#zen-benefits,
 footer {
     text-align: center;
+    margin: 0;
 }
 
 body {
@@ -37,23 +38,18 @@ body {
     background-color: $alice-blue;
     margin: auto;
     // max-width: 50vw;
-
 }
 
-section#zen-intro {
-    margin: 5% 0 0 0;
+div.page-wrapper {
     text-align: justify;
+    margin: 0 auto;
+    padding: 1.8rem;
 }
-
 
 div#zen-supporting.main.supporting {
     justify-content: center;
 }
 
-div.page-wrapper {
-    max-width: 70vw;
-    margin: auto;
-}
 
 div#zen-requirements {
     margin: 0%;
@@ -74,11 +70,13 @@ aside.sidebar {
 $breakpoint-tablet: 670px;
 
 @media (min-width: $breakpoint-tablet) {
-    body:nth-child(n) {
-        padding: 1%;
-        // background-color: aqua;
-        border-left: 20vw solid black;
-        border-right: 20vw solid black;
+    body {
+        background: #676767;
+        margin: 0;
+    }
+    div.page-wrapper {
+        background: $alice-blue;
+        max-width: 1400px;
     }
 
     div#zen-supporting,
