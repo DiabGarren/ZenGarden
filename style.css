@@ -95,7 +95,7 @@ aside.sidebar {
   }
   div.page-wrapper {
     background: rgb(232, 241, 242);
-    max-width: 1200px;
+    max-width: 65vw;
   }
   div#zen-supporting,
   div#zen-requirements {
