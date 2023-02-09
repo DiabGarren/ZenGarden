@@ -88,14 +88,14 @@ aside.sidebar {
   margin: 5%;
 }
 
-@media (min-width: 670px) {
+@media (min-width: 550px) {
   body {
-    background: #676767;
+    background: #000;
     margin: 0;
   }
   div.page-wrapper {
     background: rgb(232, 241, 242);
-    max-width: 1400px;
+    max-width: 1200px;
   }
   div#zen-supporting,
   div#zen-requirements {
