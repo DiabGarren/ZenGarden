@@ -1,17 +1,13 @@
 @use "colors" as *;
 
-#zen-explanation {
-    border-radius: 3px;
-}
-
-#zen-explanation h3, #zen-explanation p {
-    animation: background-pan 3s linear infinite;
+abbr {
     background: linear-gradient(to right, #0f01a4, #017a0f, #0f01a4);
+    animation: background-pan 3s linear infinite;
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 @keyframes background-pan {
