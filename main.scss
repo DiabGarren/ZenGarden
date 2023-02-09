@@ -67,16 +67,16 @@ aside.sidebar {
 }
 
 //670px to change the animation
-$breakpoint-tablet: 670px;
+$breakpoint-tablet: 550px;
 
 @media (min-width: $breakpoint-tablet) {
     body {
-        background: #676767;
+        background: #000;
         margin: 0;
     }
     div.page-wrapper {
         background: $alice-blue;
-        max-width: 1400px;
+        max-width: 1200px;
     }
 
     div#zen-supporting,
