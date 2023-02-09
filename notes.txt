@@ -1,0 +1,8 @@
+-35,-40,-50
+425,375,320
+
+
+
+margin-top: 25%;
+
+list-style-type: none;
