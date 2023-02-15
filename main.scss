@@ -4,105 +4,167 @@
 @use "heading";
 
 h1 {
-    font-family: $font-lato;
+  font-family: $font-lato;
 }
-
-h2 {
-    font-family: $font-lora;
+h2,body {
+  font-family: $font-lora;
 }
-
 h3 {
-    font-family: $font-roboto;
-    font-weight: bold;
+  font-family: $font-roboto;
+  font-weight: bold;
 }
-
 p {
-    font-family: $font-slab;
+  font-family: $font-slab;
 }
 
+h3.select,
+h3.archives ,
+div#zen-resources.zen-resources,
+div#design-selection.design-selection ,
+li.next,
+li.viewall,
+footer ,div.summary,h1,
+h2 {
+  text-align: center;
+}
 
+//add image
 
-h1,
-h2,
-h3,
-div.summary,
-div#zen-benefits,
-footer {
-    text-align: center;
-    margin: 0;
+body{
+  background-image: url('https://tinyurl.com/mxntn7rp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1vw;
 }
 
 body {
-    font-family: $font-lora; // font family
-    color: $rich-black; // text color
-    background-color: $alice-blue;
-    margin: auto;
-    // max-width: 50vw;
+  color: $rich-black; // text color
+  background-color: $alice-blue;
+  padding: 10vw;
+}
+
+h1 {
+  font-size: 10vw;
+}
+h2 {
+  font-size: 5vw;
+}
+div#zen-summary.summary {
+  padding: 5%;
 }
 
 div.page-wrapper {
-    text-align: justify;
-    margin: 0 auto;
-    padding: 1.8rem;
+  text-align: justify;
 }
-
 div#zen-supporting.main.supporting {
-    justify-content: center;
+  justify-content: center;
 }
-
-
-div#zen-requirements {
-    margin: 0%;
+div#zen-requirements,
+div.page-wrapper ,
+aside.sidebar,
+footer ,div.summary,
+h1,h2 {
+  margin: 0%;
 }
-
-
 nav {
-    margin: -4vh;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin: -4vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
-aside.sidebar {
-    margin: 5%
+div#zen-summary.summary > p:nth-child(2) {
+  font-size: 60%;
 }
-
-//670px to change the animation
-$breakpoint-tablet: 550px;
-
-@media (min-width: $breakpoint-tablet) {
-    body {
-        background: #000;
-        margin: 0;
-    }
-    div.page-wrapper {
-        background: $alice-blue;
-        max-width: 65vw;
-    }
-
-    div#zen-supporting,
-    div#zen-requirements {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-        column-gap: 5%;
-        margin: 5%;
-    }
-
-    div#zen-benefits {
-        grid-column: span 2;
-    }
-
-    h3 {
-        grid-column: span 2;
-    }
-
-    div#zen-requirements,
-    footer {
-        grid-column: span 2;
-
-    }
-
-    div#zen-requirements.requirements :nth-child(6) {
-        grid-column: span 2;
-    }
+div#zen-summary.summary > p:nth-child(1) {
+  // text-align: left;
+  word-wrap: normal;
+}
+//Color code for both road and so what
+div#zen-preamble.preamble,
+div#zen-explanation.explanation {
+  background-color: $celadon;
+  padding: 5%;
+}
+//The Road to Enligtenment
+div#zen-preamble.preamble {
+  border-bottom: 1px dashed black;
+}
+// Color code for both participation and benefits
+div#zen-participation.participation,
+div#zen-benefits.benefits {
+  background-color: $mint-green;
+  padding: 5%;
+  text-align: left;
+}
+//Participation
+div#zen-participation.participation {
+  padding-top: 1%;
+  margin-top: 3%;
+  border-bottom: 1px dashed black;
+}
+div#zen-participation.participation,
+div#zen-requirements.requirements,
+div#zen-preamble.preamble {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+//Benefits
+div#zen-benefits.benefits,div#zen-explanation.explanation {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+//Requirements
+div#zen-requirements.requirements {
+  background-color: $russian-green;
+  border-bottom: 2%;
+  padding-bottom: 3%;
+  padding: 5%;
+  margin-top: 3%;
+  //border-radius: 15px;
+}
+//footer
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  background: $granny-smith-apple;
+}
+footer > a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  text-decoration: underline;
+  margin-bottom: 5%;
+  width: 85%;
+}
+div#design-selection.design-selection {
+  width: 70%;
+}
+div#design-archives.design-archives, 
+div#zen-resources.zen-resources ,
+div#design-selection.design-selection{
+  margin: auto;
+}
+div#zen-resources.zen-resources > ul {
+  width: auto;
+}
+li.next,
+li.viewall {
+  width: 90%;
+}
+// Code for Gradients in the footer
+div#design-selection.design-selection > nav > ul > li:nth-child(even) {
+  background-color: aqua; //color aqua testing purposes only
+}
+div#design-selection.design-selection > nav > ul > li:nth-child(odd) {
+  background-color: $granite-gray;
+}
+a::before{
+   content: "\a";
+   white-space: pre;
 }
