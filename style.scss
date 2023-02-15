@@ -1,0 +1,247 @@
+//Initial branch commit
+@use "fonts" as *;
+@use "colors" as *;
+@use "heading";
+
+$breakpoint-large: 500px;
+
+@mixin screen-size($size) {
+  @if ($size ==large) {
+    @media (min-width: $breakpoint-large) {
+      @content;
+    }
+  }
+}
+
+h1 {
+  font-family: $font-lato;
+}
+
+h2,
+body {
+  font-family: $font-lora;
+}
+
+h3 {
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+p {
+  font-family: $font-slab;
+  font-weight: 500;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+
+body {
+  background-image: url('https://tinyurl.com/mxntn7rp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.page-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @include screen-size(large) {
+    display: grid;
+    grid-template-columns: minmax(150px, 250px) minmax(350px, 1fr);
+  }
+}
+
+section.intro#zen-intro {
+  @include screen-size(large) {
+    grid-column: 2;
+    // display: grid;
+    // grid-template-columns: minmax(150px, 250px) minmax(350px, 1fr);
+  }
+
+  header {
+    text-align: center;
+    background: $header-bg;
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+    }
+
+    h2 {
+      color: $subheader;
+    }
+  }
+
+  div.summary#zen-summary {
+    text-align: center;
+    margin: 1rem 0;
+
+    a {
+      color: rgb(5, 57, 2);
+    }
+  }
+}
+
+div.main.supporting#zen-supporting {
+  @include screen-size(large) {
+    grid-column: 2;
+  }
+}
+
+div.preamble#zen-preamble,
+div.participation#zen-participation {
+  margin: 1rem .6rem 0;
+  border-radius: 1.5rem 1.5rem 0 0;
+  border-bottom: 2px dashed $rich-black;
+
+  @include screen-size(large) {
+    margin: 1rem 2rem 0;
+  }
+}
+
+
+div.preamble#zen-preamble,
+div.explanation#zen-explanation,
+div.participation#zen-participation,
+div.benefits#zen-benefits {
+  background: $block-bg;
+  padding: .8rem;
+
+  p {
+    margin: 1.2rem 0 0;
+  }
+}
+
+div.explanation#zen-explanation,
+div.benefits#zen-benefits {
+  margin: 0 .6rem 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+
+  @include screen-size(large) {
+    margin: 0 2rem 1rem;
+  }
+}
+
+div.participation#zen-participation,
+div.benefits#zen-benefits {
+  background-color: #fff;
+}
+
+div.requirements#zen-requirements {
+
+  h3,
+  p {
+    margin: 0 .6rem;
+    background: $block-bg;
+    padding: 0 .8rem .8rem .8rem;
+
+    @include screen-size(large) {
+      margin: 0 2rem;
+    }
+  }
+
+  h3 {
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding-top: .8rem;
+  }
+
+  p:nth-child(5) {
+    border-radius: 0 0 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    background: $author-bg;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.2em;
+
+    a {
+      color: rgb(178, 237, 174);
+    }
+  }
+
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  text-align: center;
+  background: $link;
+
+  a {
+    padding: .9rem 0;
+    text-shadow: none;
+    border-right: 2px solid $author-bg;
+    color: white;
+  }
+
+  a:last-child {
+    border: none;
+  }
+}
+
+aside.sidebar {
+  background: $sidebar-bg;
+  padding: 1rem;
+
+  @include screen-size(large) {
+    grid-row: 1/3;
+  }
+
+  div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include screen-size(large) {
+      display: block;
+      text-align: right;
+    }
+
+    div.design-selection#design-selection {
+      grid-row: 1/3;
+    }
+    
+    div {
+      @include screen-size(large) {
+        margin: 0 0 3rem;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin: .5rem 0;
+      font-weight: 600;
+    }
+
+    a {
+      color: rgb(5, 57, 2);
+    }
+
+    a:last-child {
+      color: $rich-black;
+    }
+  }
+}
