@@ -4,7 +4,7 @@ h2 abbr {
   background-size: contain;
   background-position: center;
   color: transparent;
-  animation: css-heading 5s ease infinite;
+  animation: css-heading 3s ease infinite;
 }
 
 @keyframes css-heading {
@@ -185,7 +185,7 @@ div.requirements#zen-requirements p:last-child {
   font-size: 1.2em;
 }
 div.requirements#zen-requirements p:last-child a {
-  color: rgb(178, 237, 174);
+  color: rgb(215, 249, 212);
 }
 
 footer {
@@ -200,6 +200,9 @@ footer a {
   text-shadow: none;
   border-right: 2px solid rgb(63, 120, 55);
   color: white;
+}
+footer a:hover {
+  background: rgb(41, 81, 37);
 }
 footer a:last-child {
   border: none;

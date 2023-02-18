@@ -173,7 +173,7 @@ div.requirements#zen-requirements {
     font-size: 1.2em;
 
     a {
-      color: rgb(178, 237, 174);
+      color: $require-link;
     }
   }
 
@@ -191,6 +191,10 @@ footer {
     text-shadow: none;
     border-right: 2px solid $author-bg;
     color: white;
+
+    &:hover {
+      background: $header-bg;
+    }
   }
 
   a:last-child {
