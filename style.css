@@ -136,6 +136,8 @@ section.intro#zen-intro header h2 {
 section.intro#zen-intro div.summary#zen-summary {
   text-align: center;
   margin: 1rem 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 section.intro#zen-intro div.summary#zen-summary a {
   color: rgb(5, 57, 2);
