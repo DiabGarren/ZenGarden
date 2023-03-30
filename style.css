@@ -20,7 +20,7 @@
   /* Monospace: Sans (natural-width) or Mono (fixed-width) */
   --casl: "CASL" 0;
   /* Casual: Linear to Casual */
-  --wght: 00;
+  --wght: 100;
   /* Weight: Light to ExtraBlack; usually set with `font-weight` */
   --slnt: 0deg;
   /* Slant: 0 to -15 degrees, auto cursive at -14 */
