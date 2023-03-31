@@ -18,7 +18,8 @@ Link to Colors: [Color Pallet](https://coolors.co/e8f1f2-d1ffd7-b3ffb3-b3efb2-a6
 
 ---
 
-![Wireframe](https://i.postimg.cc/4dbmQcPJ/Picture-1.png)
+![Wireframe](https://i.postimg.cc/zXXyf8c8/small.jpg)
+![Wireframe](https://i.postimg.cc/Tw6wv6b8/large.jpg)
 
 The wireframes reflect our Ideology and the responsiveness of the CSS, so when we move from one screen to other screen size, we have come up with the idea to stretch the Image and even make it dynamic as the user scrolls it changes.
 
