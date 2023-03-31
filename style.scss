@@ -266,12 +266,12 @@ aside.sidebar {
     }
 
     h3, li {
-      text-shadow: -1px -1px 0 #acf9a6, 1px -1px 0 #acf9a6, -1px 1px 0 #acf9a6, 0 0 15px black, 0 0 15px black;
+      text-shadow: -1px -1px 0 #acf9a6, 1px -1px 0 #acf9a6, -1px 1px 0 #acf9a6;
     }
     
     a {
-      color: rgb(5, 57, 2);
-      text-shadow: -1px -1px 0 #6fee66, 1px -1px 0 #6fee66, -1px 1px 0 #6fee66, 0 0 15px black, 0 0 15px black;
+      color: rgb(0, 0, 0);
+      text-shadow: -1px -1px 0 #6fee66, 1px -1px 0 #6fee66, -1px 1px 0 #6fee66;
     }
     
     a:last-child {
@@ -282,7 +282,7 @@ aside.sidebar {
       display: inline-block;
       transition: .3s ease-in-out;
       text-decoration: underline;
-      transform: scale(1.2);
+      transform: scale(1.05);
     }
   }
 }
